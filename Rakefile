@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'config/environment'
 require 'sinatra/activerecord/rake'
 
@@ -12,4 +14,4 @@ namespace :db do
   task :seed do
     require_relative './db/seeds.rb'
   end
- end
+end

@@ -1,4 +1,6 @@
-ENV['SINATRA_ENV'] ||= "development"
+# frozen_string_literal: true
+
+ENV['SINATRA_ENV'] ||= 'development'
 
 require 'io/console'
 require 'bundler/setup'
@@ -9,7 +11,8 @@ require_all 'lib'
 require './app'
 
 ActiveRecord::Base.establish_connection(
-    adapter: 'sqlite3', 
-    database: 'db/development.db')
+  adapter: 'sqlite3',
+  database: 'db/development.db'
+)
 
 ActiveRecord::Base.logger = nil
