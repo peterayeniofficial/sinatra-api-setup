@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-gem 'activerecord', '~>5.0', require: 'active_record'
+gem 'activerecord', '~>6.1', require: 'active_record'
 gem 'faker'
 gem 'pry'
 gem 'rake'
